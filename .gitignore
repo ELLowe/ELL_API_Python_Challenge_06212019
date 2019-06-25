@@ -5,6 +5,9 @@ __pycache__/
 
 # C extensions
 *.so
+*.csv
+
+
 
 # Distribution / packaging
 .Python
@@ -102,3 +105,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# ignores
+api_keys.py
