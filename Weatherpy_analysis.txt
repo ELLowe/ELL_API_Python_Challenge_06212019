@@ -1,0 +1,16 @@
+##############################################################
+# Analysis of Proximity to Equator vs. Temperature in Cities #
+# Esther Lowe - 06/21/2019                                   #
+##############################################################
+
+1. Of the 8,693 countries generated in the random cities csv file, 434, when used in the Open Weather Map API get request had no weather data available. This error in the request could be resolved using the latitude and longitude to find the nearest associated latitude and longitude of those cities, if it were necessary. Because the advice was to test the hypothesis with 500 cities, and this error only occured with 5% of the cities, and the data used was over 16 times more than necessary, this extra step seemed unnecessary. Just to be sure, an aditional graph was created to analyze the spread of data using a heat map.
+
+Looking at the heat map, it appeared that most of the 8,259 cities analyzed come from eastern United States, Europe, and Japan, some of the most city-dense countries in the world. One would expect that in randomly generating cities, this spread is reasonable because the probability of choosing a city in a country with the highest density of cities is more likely than the probability of selecting a city with fewer cities. However, even with the odds against less big and dense countries, there were also many cities analyzed from Australia, New Zealand, Indonesia, Singapore, South America, Mexico, and other countries or continents. This spread seemed reasonable for gathering data near and far from the equator, further supporting the claim that finding and using the 434 cities not included was unnecessary.
+
+2. The data gathered for this project was the weather from the current day the weather information was requested. For a more accurate analysis of the temperatures in cities around the world and how they relate to the temperature at the equator, it would make more sense to gather the average annual temperature for each city. This would even out the global differences in season and the corresponding daily impact on the data.
+
+Despite this lack, there is a clear curve indicating that from the data gathered for one day, at this time of year, the hottest cities in the world (90 degrees F or more) are approximately between 0 to 40 degrees latitude. The coldest cities (40 degrees F or less), from data gathered for one day, at this time of year, appear (mostly) furthest from the equator.
+
+Although the curve does not peak at the equator for one day of data collected, the general trend supports the hypothesis that cities in closer proximity to the equator have higher temperatures.
+
+3. It is interesting to note that for the day the data was collected, cities around the world with the lowest humidity were near the equator (between -20 and 40 degrees latitude). Perhaps a study of annual humidity in locations around the world could indicate desert-like climates near the equator with average annual temperatures higher than temperatures anywhere else in the world.
